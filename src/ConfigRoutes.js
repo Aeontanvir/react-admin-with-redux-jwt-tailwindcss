@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import WebsiteRoutes from './modules/website/routes';
-import AuthRoutes from './modules/auth/routes';
-import AdminRoutes from './modules/admin/routes';
+import WebsiteRoutes from './modules/website';
+import AuthRoutes from './modules/auth';
+import AdminRoutes from './modules/admin';
 
 const ConfigRoutes = () => {
     return (

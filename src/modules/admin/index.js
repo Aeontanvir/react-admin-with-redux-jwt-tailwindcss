@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import AdminLayout from './components/AdminLayout'
+import Dashboard from './pages/Dashboard'
 
 const AdminRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<AdminLayout />} />
+                <Route path="/" element={<Dashboard />} />
         </Routes>
     );
 };
