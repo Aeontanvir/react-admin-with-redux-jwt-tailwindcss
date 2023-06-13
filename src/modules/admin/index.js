@@ -1,12 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard'
+import DashboardPage from './pages/DashboardPage';
+import SettingsPage from './pages/SettingsPage';
 
-const AdminRoutes = () => {
-    return (
-        <Routes>
-                <Route path="/" element={<Dashboard />} />
-        </Routes>
-    );
-};
+const adminRoutes = [
+    {
+        path: '',
+        component: DashboardPage,
+    },
+    {
+        path: 'settings',
+        component: SettingsPage,
+    },
+];
 
-export default AdminRoutes;
+export default adminRoutes;

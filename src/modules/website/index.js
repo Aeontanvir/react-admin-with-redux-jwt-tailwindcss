@@ -1,16 +1,20 @@
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
-const WebsiteRoutes = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-        </Routes>
-    );
-};
+const websiteRoutes = [
+    {
+        path: '',
+        component: HomePage,
+    },
+    {
+        path: 'about',
+        component: AboutPage,
+    },
+    {
+        path: 'contact',
+        component: ContactPage,
+    },
+];
 
-export default WebsiteRoutes;
+export default websiteRoutes;

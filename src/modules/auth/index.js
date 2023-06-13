@@ -1,10 +1,15 @@
-import {  Routes } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
-const AuthRoutes = () => {
-    return (
-        <Routes>
-        </Routes>
-    );
-};
+const adminRoutes = [
+    {
+        path: '',
+        component: LoginPage,
+    },
+    {
+        path: 'register',
+        component: RegisterPage,
+    },
+];
 
-export default AuthRoutes;
+export default adminRoutes;

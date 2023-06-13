@@ -8,7 +8,7 @@ const AdminLayout = ({children}) => {
         <SideBar />
       </div>
       <div className="basis-[88%]">
-        <main>Test {children}</main>
+        <main>{children}</main>
       </div>
     </div>
   );
