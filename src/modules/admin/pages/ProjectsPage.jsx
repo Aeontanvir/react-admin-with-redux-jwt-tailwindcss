@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {getAll} from "../../../services/project.service";
+import {getAll} from "../../../services/ProjectService";
 
 function ProjectsPage() {
   const [projectList, setProjectList] = useState([]);
