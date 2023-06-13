@@ -1,19 +1,20 @@
 import axios from 'axios';
 
-const accessToken = "Test";
-const API_URL = process.env.API_URL
+const accessToken = null;
+const API_URL = process.env.REACT_APP_API_URL;
 
+debugger
 const options = {
     baseURL: API_URL,
-    headers : {
+    headers: {
         Accept: 'application/json'
     }
-}
+};
 
 if (accessToken) {
     options.headers['accessToken'] = accessToken;
 }
 
-const client = axios.create(options)
+const client = axios.create(options);
 
-export  { client };
+export default client;

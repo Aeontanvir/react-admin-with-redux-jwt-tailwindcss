@@ -1,29 +1,22 @@
-import { client } from '../config/client'
-const ROOT_URL = 'projects'
+import client from '../config/client';
 
-const getAll = function (opts = {}) {
-    return client().get(`${ROOT_URL}`)
-};
-const getById = function ({ id }) {
-    return client().get(`${ROOT_URL}/${id}`)
-};
-const create = function ({ payload }) {
-    return client().post(ROOT_URL, payload)
-};
-const replace = function ({ id, payload }) {
-    return client().put(`${ROOT_URL}`, payload)
-};
-const update = function ({ id, payload }) {
-    return client().patch(`${ROOT_URL}/${id}`, payload)
-};
-const removeById = function ({ id }) {
-    return client().delete(`${ROOT_URL}/${id}`)
-};
+const ROOT = 'projects';
 
-export {
-    getAll,
-    getById,
-    create,
-    update,
-    removeById,
-}
+export const getAll = (opts={}) => {
+    return client.get(ROOT);
+};
+export const getById = ({id}) => {
+    return client.get(`${ROOT}/${id}`);
+};
+export const create = ({payload}) => {
+    return client.post(ROOT, payload);
+};
+export const replace = ({id, payload}) => {
+    return client.put(`${ROOT}/${id}`, payload);
+};
+export const update = ({id, payload}) => {
+    return client.patch(`${ROOT}/${id}`, payload);
+};
+export const removeById = ({id}) => {
+    return client.delete(`${ROOT}/${id}`);
+};
