@@ -3,7 +3,6 @@ import axios from 'axios';
 const accessToken = null;
 const API_URL = process.env.REACT_APP_API_URL;
 
-debugger
 const options = {
     baseURL: API_URL,
     headers: {
