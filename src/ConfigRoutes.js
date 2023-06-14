@@ -10,7 +10,6 @@ const ConfigRoutes = () => {
     return (
         <Router>
             <Routes>
-               
                 <Route
                     path="/auth/*"
                     element={
@@ -47,7 +46,7 @@ const ConfigRoutes = () => {
                         </WebsiteLayout>
                     }
                 />
-                
+
             </Routes>
         </Router>
     );
